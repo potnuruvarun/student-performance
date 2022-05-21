@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images7"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Subject"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/subname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texttitle"
+        android:layout_marginTop="10dp"
+        android:hint="Subject Name"
+        android:inputType="textPersonName"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/basket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subname"
+        android:layout_marginTop="10dp"
+        android:hint="sgpa"
+        android:inputType="text"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/credit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/basket"
+        android:layout_marginTop="10dp"
+        android:hint="Cgpa"
+        android:inputType="text"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/semester"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/credit"
+        android:layout_marginTop="10dp"
+        android:hint="Semester"
+        android:inputType="text"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="24dp"
+        android:text="Insert  Data"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#00c3ff"
+        android:layout_below="@id/semester"/>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/btnInsert"
+        android:layout_marginLeft="50dp"
+        android:backgroundTint="#00c3ff"
+        android:text="Update Data"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/btnUpdate"
+        android:layout_marginLeft="50dp"
+        android:backgroundTint="#00c3ff"
+        android:text="Delete Data"
+        android:textSize="24dp" />
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="24dp"
+        android:text="View Data"
+        android:backgroundTint="#00c3ff"
+        android:layout_below="@id/btnDelete"/>
+</RelativeLayout>
